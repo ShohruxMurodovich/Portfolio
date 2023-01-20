@@ -17,7 +17,6 @@ function App() {
     Aos.init({ duration: 2000 });
   }, [])
 
-
   const handleClick = () =>{
     if(click){
       return setClick(false)
@@ -233,7 +232,7 @@ function App() {
 
               <div data-aos="fade-up" className="achievments__item item">
                 <span className="item__text">Clients</span>
-                <strong className="item__number"><CountUp end={10} /></strong>
+                <strong className="item__number"><CountUp end={3} /></strong>
               </div>
 
               <div data-aos="fade-up" className="achievments__item item">
@@ -243,7 +242,7 @@ function App() {
 
               <div data-aos="fade-up" className="achievments__item item">
                 <span className="item__text">Cups of Coffee</span>
-                <strong className="item__number"><CountUp end={120} /></strong>
+                <strong className="item__number"><CountUp end={100} /></strong>
               </div>
 
             </div>
