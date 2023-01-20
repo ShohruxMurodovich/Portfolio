@@ -1,5 +1,5 @@
 import "./Assets/main.css"
-import logo from "./Assets/images/logo.png"
+import logo from "./Assets/images/Logo.png"
 import me from "./Assets/images/me.jpg"
 import vet from "./Assets/images/vet.png"
 import Aos from "aos"
