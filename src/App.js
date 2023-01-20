@@ -1,5 +1,5 @@
 import "./Assets/main.css"
-import logo from "./Assets/images/Logo.png"
+import logo from "./Assets/images/logo.png"
 import me from "./Assets/images/me.jpg"
 import vet from "./Assets/images/vet.png"
 import Aos from "aos"
@@ -7,11 +7,13 @@ import 'aos/dist/aos.css'
 import CountUp from "react-countup"
 import { useEffect } from "react"
 import { useState } from "react"
+import ScrollTrigger from "react-scroll-trigger"
 
 
 function App() {
 
   const [click, setClick] = useState(false)
+  const [counterOn, setCounterOn] = useState(false)
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -30,7 +32,7 @@ function App() {
       <div className="container">
 
         <header className={click ? 'header open' : 'header'}>
-          <a href="#" className="logo"><img className="logo__img" src={logo} alt="Logo" /></a>
+          <a href="/" className="logo"><img className="logo__img" src={logo} alt="Logo" /></a>
 
           <nav className="nav">
             <ul className="nav__list">
@@ -223,31 +225,35 @@ function App() {
 
           </section>
 
-          <section id="achievments" data-aos="fade-up" className="achievments">
+
+        <section id="achievments" data-aos="fade-up" className="achievments">
             <p className="portfolio__text achievment__text">PORTFOLIO</p>
             <h2 className="portfolio__title achievment__title">I love to share my achievements</h2>
 
+            <ScrollTrigger onEnter={()=> setCounterOn(true)} onExit={()=> setCounterOn(false)}>
             <div className="achievments__case">
-
 
               <div data-aos="fade-up" className="achievments__item item">
                 <span className="item__text">Clients</span>
-                <strong className="item__number"><CountUp end={3} /></strong>
+                <strong className="item__number">{counterOn && <CountUp end={3} duration={2} />}</strong>
               </div>
 
               <div data-aos="fade-up" className="achievments__item item">
                 <span className="item__text">Projects</span>
-                <strong className="item__number"><CountUp end={15} /></strong>
+                <strong className="item__number">{counterOn && <CountUp end={15} duration={2} />}</strong>
               </div>
 
               <div data-aos="fade-up" className="achievments__item item">
                 <span className="item__text">Cups of Coffee</span>
-                <strong className="item__number"><CountUp end={100} /></strong>
+                <strong className="item__number">{counterOn && <CountUp end={100} duration={2} />}</strong>
               </div>
 
             </div>
 
+            </ScrollTrigger>
+
           </section>
+
         </main>
 
         <footer className="footer">
