@@ -690,6 +690,7 @@ body{
     height: 0;
     opacity: 0;
     right: -100;
+    overflow: hidden;
   }
 
 
