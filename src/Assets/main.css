@@ -100,6 +100,7 @@ body{
 
 .wrapper-hero{
   display: inline-flex;
+  align-items: center;
   margin-bottom: 240px;
 }
 
@@ -786,6 +787,7 @@ body{
 
 @media only screen and (max-width:500px){
   .hero{
+    width: 100%;
     padding: 0;
     margin-bottom: 80px;
   }
@@ -825,7 +827,7 @@ body{
   }
 
   .wrapper-hero .dynamic-txts{
-    margin-left: 15px;
+    margin-left: 10px;
     height: 40px;
     line-height: 40px;
     overflow: hidden;
@@ -860,5 +862,32 @@ body{
 
   .about__quote{
     font-size: 16px;
+  }
+}
+
+@media only screen and (max-width:440px){
+  .hero__title{
+    font-size: 20px;
+  }
+
+  .wrapper-hero .static-txt{
+    font-size: 20px;
+  }
+
+  .dynamic-txts li{
+    font-size: 20px;
+  }
+
+  .wrapper-hero .dynamic-txts{
+    margin-left: 10px;
+    height: 35px;
+    line-height: 35px;
+    overflow: hidden;
+  }
+
+  @keyframes slide{
+    100%{
+      top: -105px;
+    }
   }
 }
