@@ -1,6 +1,9 @@
 import "./Assets/main.css"
 import logo from "./Assets/images/Logo.png"
+import weather from "./Assets/images/weather.png"
 import me from "./Assets/images/me.jpg"
+import teacher from "./Assets/images/teacher.jpg"
+import films from "./Assets/images/films.jpg"
 import vet from "./Assets/images/vet.png"
 import Aos from "aos"
 import 'aos/dist/aos.css'
@@ -221,6 +224,48 @@ function App() {
 
               </div>
               <img className="project__img" src={vet} alt="Project Img" />
+            </div>
+
+
+            <div className="portfolio__project project" data-aos="fade-up">
+              <div className="project__content">
+                <p className="project__description">Easy Project Js</p>
+                <h3 className="project__title">Filter , Search and Book films</h3>
+                <p className="project__language">FrontEnd: Html, Css, Js</p>
+                <a className="project__view" href="https://shohrux-films-book.netlify.app/" target="blank">View Project</a>
+                <a className="project__repository" href="https://github.com/ShohruxMurodovich/book-films" target="blank">GitHub Repository</a>
+
+              </div>
+              <img className="project__img" src={films} alt="Project Img" />
+            </div>
+
+            <div className="portfolio__project project" data-aos="fade-up">
+              <div className="project__content">
+                <p className="project__description">Weather App</p>
+                <h3 className="project__title">Simple Weather App in React</h3>
+                <p className="project__language">FrontEnd: React</p>
+                <a className="project__view" href="https://shohrux-weather-app.netlify.app/" target="blank">View Project</a>
+                <a className="project__repository" href="https://github.com/ShohruxMurodovich/weather-app" target="blank">GitHub Repository</a>
+
+              </div>
+              <img className="project__img" src={weather} alt="Project Img" />
+            </div>
+
+
+            <div className="portfolio__project project" data-aos="fade-up">
+              <div className="project__content">
+                <p className="project__description">Teacher and students</p>
+                <h3 className="project__title">Homework site between Teacher and Students</h3>
+                <p className="project__language">FrontEnd: React</p>
+                <p className="project__language">Backend: Node.Js</p>
+                <p className="project__language">Database: PostgreSQL</p>
+                <p className="project__language">Admin</p>
+                <p className="project__language">Login: admin</p>
+                <p className="project__language">Password: admin</p>
+                <a className="project__view" href="https://teacher-student.netlify.app/" target="blank">View Project</a>
+                <a className="project__repository" href="https://github.com/ShohruxMurodovich/teacher-student-backend" target="blank">GitHub Repository</a>
+              </div>
+              <img className="project__img" src={teacher} alt="Project Img" />
             </div>
 
           </section>
