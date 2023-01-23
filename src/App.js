@@ -1,6 +1,8 @@
 import "./Assets/main.css"
 import logo from "./Assets/images/Logo.png"
 import weather from "./Assets/images/weather.png"
+import courses from "./Assets/images/courses.png"
+import users from "./Assets/images/users.png"
 import me from "./Assets/images/me.jpg"
 import teacher from "./Assets/images/teacher.jpg"
 import films from "./Assets/images/films.jpg"
@@ -249,6 +251,37 @@ function App() {
 
               </div>
               <img className="project__img" src={weather} alt="Project Img" />
+            </div>
+
+
+            <div className="portfolio__project project" data-aos="fade-up">
+              <div className="project__content">
+                <p className="project__description">Users</p>
+                <h3 className="project__title">Simple Site with Deleting and Creating Users</h3>
+                <p className="project__language">FrontEnd: React</p>
+                <p className="project__language">Backend: Node.js</p>
+                <p className="project__language">Database: PostgreSQL</p>
+                <a className="project__view" href="https://shohrux-users.netlify.app" target="blank">View Project</a>
+                <a className="project__repository" href="https://github.com/ShohruxMurodovich/users" target="blank">GitHub Repository</a>
+
+              </div>
+              <img className="project__img" src={users} alt="Project Img" />
+            </div>
+
+
+            <div className="portfolio__project project" data-aos="fade-up">
+              <div className="project__content">
+                <p className="project__description">Courses</p>
+                <h3 className="project__title">Simple Site with Courses</h3>
+                <p className="project__language">FrontEnd: React</p>
+                <p className="project__language">Backend: Node.js</p>
+                <p className="project__language">Database: PostgreSQL</p>
+                <a className="project__view" href="https://shohrux-courses.netlify.app/admin" target="blank">View Admin Page</a>
+                <a className="project__view" href="https://shohrux-courses.netlify.app" target="blank">View Project</a>
+                <a className="project__repository" href="https://github.com/ShohruxMurodovich/courses-frontend" target="blank">GitHub Repository</a>
+
+              </div>
+              <img className="project__img" src={courses} alt="Project Img" />
             </div>
 
 
