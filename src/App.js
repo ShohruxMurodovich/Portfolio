@@ -7,6 +7,7 @@ import me from "./Assets/images/me.jpg"
 import teacher from "./Assets/images/teacher.jpg"
 import films from "./Assets/images/films.jpg"
 import vet from "./Assets/images/vet.png"
+import resume from "./Assets/resume.pdf"
 import Aos from "aos"
 import 'aos/dist/aos.css'
 import CountUp from "react-countup"
@@ -73,7 +74,7 @@ function App() {
               <p className="about__quote">Most good programmers do their jobs not because they expect to be paid or recognized,
                 but because they enjoy programming.
               </p>
-              <a className="about__resume" href="#resume">Checkout my resume</a>
+              <a className="about__resume" href={resume} download>Checkout my resume</a>
 
               <div className="wrapper wrapper__about">
 
